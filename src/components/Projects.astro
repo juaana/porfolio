@@ -1,15 +1,15 @@
 ---
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-import Notion from "./icons/Notion.astro"
+import Wordpress from "./icons/Wordpress.astro"
 import Laravel from "./icons/Laravel.astro"
 import JavaScript from "./icons/JavaScript.astro"
 import Bootstrap from './icons/Bootstrap.astro'
 const TAGS = {
-  NOTION: {
-    name: "Notion",
+  WORDPRESS: {
+    name: "Wordpress",
     class: "bg-black text-white",
-    icon: Notion,
+    icon: Wordpress,
   },
   LARAVEL:{
     name: "Laravel",
@@ -28,22 +28,23 @@ const TAGS = {
   }
 }
 const PROJECTS = [
-   {
+   
+  {
+    title: "Alpinum Acounting AG | Webpage",
+    description:
+      "Página web de Alpinum Accounting AG, una empresa de consultoría de contabilidad y finanzas.",
+    link: "https://alpinum-accounting.ch/",
+    image: "/projects/ALPINUM.png",
+    tags: [TAGS.WORDPRESS]
+  },
+  {
     title: "Población y Traslado | Ecosistema PPL",
     description:
       "Diseño y desarrollo de uno de los microservicios del Ecosistema de las Personas Privadas de su Libertad.",
     link: "",
     image: "/projects/POTRAS.webp",
     tags: [TAGS.BOOTSTRAP,TAGS.JAVASCRIPT, TAGS.LARAVEL],
-  },
-  {
-    title: "Recursos ATIC",
-    description:
-      "Biblioteca de recursos para estudiantes de la carrera de ATIC, APU y Lic. en Informática. Contenido con recomendaciones, repositorios y videos de interés para complementar la carrera",
-    link: "https://aticunlp.notion.site/Facultad-b1b05ad5f3bf4fd3b81bd622f723228d",
-    image: "/projects/ATIC.webp",
-    tags: [TAGS.NOTION],
-  },
+  }
 
 ]
 ---
